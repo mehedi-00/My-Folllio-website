@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.valign-center{
+    align-items: center;
+}
+
+/* nav part css */
+
+#navigation{
+    background-color: #d1d1d1;
+}
+.logo img{
+    width: 100px;
+}
+.nav-menu ul li{
+    padding: 35px 15px;
+}
+.nav-menu ul li a{
+    font-size: 12px;
+    font-weight:700;
+    color: #000;
+    text-transform: uppercase;
+}
+.nav-menu ul li:last-child{
+    padding-right: 0;
+}
+
+/* baner part css */
+
+.baner-item{
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+.baner-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: -1;
+}
+.baner-content{
+    padding-top: 50px;
+}
+.baner-item h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+.baner-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #d1d1d1;
+}
+.baner-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #d1d1d1;
+}
+.baner-content .btn{
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px solid #f1f1f1;
+    padding: 15px 30px;
+    color: #f1f1f1;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+.baner-content .btn:hover{
+    background-color: blue;
+    border-color: blue;
+}
